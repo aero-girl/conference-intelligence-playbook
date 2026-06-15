@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Database Evolution Presentation · Conference Intelligence Pack</title>
+  <style>
+    :root { --bg:#020617; --panel:#0f172a; --panel2:#111827; --text:#e5e7eb; --muted:#94a3b8; --cyan:#22d3ee; --violet:#a78bfa; --amber:#f59e0b; --rose:#fb7185; --green:#34d399; --line:rgba(148,163,184,.22); }
+    *{box-sizing:border-box} body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;background:radial-gradient(circle at top left, rgba(34,211,238,.20), transparent 34rem),radial-gradient(circle at top right, rgba(167,139,250,.18), transparent 30rem),var(--bg);color:var(--text);line-height:1.55} 
+    a{color:var(--cyan)} .wrap{max-width:1180px;margin:0 auto;padding:28px 18px 70px} .topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:32px;color:var(--muted);font-size:14px} .pill{border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:rgba(15,23,42,.72)}
+    .hero{border:1px solid var(--line);border-radius:30px;padding:34px;background:linear-gradient(135deg,rgba(15,23,42,.92),rgba(17,24,39,.74));box-shadow:0 24px 90px rgba(0,0,0,.35)}
+    .eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:800} h1{font-size:clamp(34px,6vw,72px);line-height:.95;margin:14px 0 18px;letter-spacing:-.055em} .subtitle{font-size:clamp(18px,2.4vw,25px);max-width:900px;color:#cbd5e1;margin:0}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-top:28px} .hero-card,.section-card,.mini-card{border:1px solid var(--line);border-radius:24px;background:rgba(15,23,42,.78);padding:22px} .big-line{font-size:26px;line-height:1.15;font-weight:850;letter-spacing:-.03em} .muted{color:var(--muted)}
+    .nav{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0} .nav a{text-decoration:none;color:#dbeafe;border:1px solid var(--line);background:rgba(15,23,42,.75);border-radius:999px;padding:8px 11px;font-size:13px} .nav a:hover{border-color:var(--cyan)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0} .mini-card h3{margin:.2rem 0 .4rem;font-size:18px} .chip{display:inline-flex;align-items:center;border-radius:999px;padding:5px 9px;font-size:12px;font-weight:800;color:#06131a;background:var(--cyan)} .chip.violet{background:var(--violet)} .chip.amber{background:var(--amber)} .chip.green{background:var(--green)}
+    .section-card{margin:18px 0;padding:28px} .section-kicker{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);font-weight:800} h2{font-size:clamp(25px,3vw,38px);line-height:1.05;margin:8px 0 16px;letter-spacing:-.035em} h3{margin:22px 0 8px;color:#f8fafc;font-size:20px} p{color:#cbd5e1} ul,ol{padding-left:1.25rem;color:#cbd5e1} li{margin:.45rem 0} blockquote{margin:16px 0;padding:18px 20px;border-left:4px solid var(--cyan);background:rgba(34,211,238,.08);border-radius:16px} blockquote p{margin:0;font-size:20px;color:#f8fafc;font-weight:750} code{background:rgba(148,163,184,.16);padding:2px 5px;border-radius:6px;color:#f8fafc}
+    .diagram{margin:24px 0;border:1px solid var(--line);border-radius:24px;background:rgba(2,6,23,.55);padding:14px;overflow:auto} svg{max-width:100%;height:auto} .footer{margin-top:34px;color:var(--muted);font-size:13px;text-align:center} .warn{border-color:rgba(245,158,11,.5);background:rgba(245,158,11,.08)}
+    @media(max-width:850px){.hero-grid,.grid{grid-template-columns:1fr} .hero{padding:24px} .section-card{padding:22px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="topbar"><a href="../../">← Conference Intelligence Playbook</a><span class="pill">Session HTML · Database Evolution</span></div>
+    <section class="hero">
+      <div class="eyebrow">Conference Intelligence Pack</div>
+      <h1>Database Evolution Presentation</h1>
+      <p class="subtitle">AI-generated applications will break yesterday’s database assumptions. The database layer now has to become elastic, governed, recoverable and agent-safe.</p>
+      <div class="hero-grid">
+        <div class="hero-card">
+          <div class="chip">Sharp framing</div>
+          <p class="big-line">The next generation of AI apps does not just need more databases. It needs safer databases.</p>
+          <p class="muted">Based on the pasted Otter summary/outline. The original Otter transcript link was truncated, so exact quotes and speaker attribution still need hardening.</p>
+        </div>
+        <div class="hero-card warn">
+          <div class="chip amber">Use tomorrow</div>
+          <ul>
+            <li>Open with the safety/governance angle, not database plumbing.</li>
+            <li>Split the message: FSI = risk/resilience; retail = product truth/AI shelf.</li>
+            <li>Avoid “infinite capacity” unless framed as elastic capacity with cost controls.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <nav class="nav" aria-label="Session sections">
+      <a href="#bottom-line">Bottom line</a><a href="#sales-growth-talk-track">Sales</a><a href="#fsi-customer-angle">FSI</a><a href="#retail-cpg-customer-angle">Retail/CPG</a><a href="#linkedin-public-thought-leadership-angles">Content</a><a href="#livestream-playback-segment">Livestream</a><a href="#devil-s-advocate">Devil’s advocate</a>
+    </nav>
+    <section class="grid">
+      <div class="mini-card"><span class="chip cyan">For consultants</span><h3>Build the pattern</h3><p>Agent-safe database architecture: branching, rollback, audit, permissions and evals.</p></div>
+      <div class="mini-card"><span class="chip violet">For sales</span><h3>Spot the pain</h3><p>Lots of AI prototypes, brittle CDC, unpredictable database cost, and nervous risk teams.</p></div>
+      <div class="mini-card"><span class="chip green">For customers</span><h3>Make it real</h3><p>FSI: proof/control/recovery. Retail: trustworthy product data and resilient AI experiences.</p></div>
+    </section>
+    <section class="diagram" aria-label="Conceptual diagram">
+      <svg viewBox="0 0 1080 390" role="img" aria-label="AI app database safety flow">
+        <rect x="20" y="30" width="230" height="110" rx="20" fill="#0f172a" stroke="#22d3ee"/><text x="135" y="72" text-anchor="middle" fill="#e5e7eb" font-size="24" font-weight="800">AI apps + agents</text><text x="135" y="105" text-anchor="middle" fill="#94a3b8" font-size="16">more environments, writes, risk</text>
+        <path d="M260 85 H365" stroke="#22d3ee" stroke-width="5"/><rect x="380" y="30" width="320" height="110" rx="20" fill="#111827" stroke="#a78bfa"/><text x="540" y="69" text-anchor="middle" fill="#e5e7eb" font-size="24" font-weight="800">Agent-safe data layer</text><text x="540" y="102" text-anchor="middle" fill="#94a3b8" font-size="16">branch · govern · audit · restore</text>
+        <path d="M710 85 H820" stroke="#a78bfa" stroke-width="5"/><rect x="835" y="30" width="225" height="110" rx="20" fill="#0f172a" stroke="#34d399"/><text x="948" y="72" text-anchor="middle" fill="#e5e7eb" font-size="24" font-weight="800">Production trust</text><text x="948" y="105" text-anchor="middle" fill="#94a3b8" font-size="16">scale without chaos</text>
+        <g transform="translate(80,210)"><rect width="190" height="92" rx="18" fill="#111827" stroke="#334155"/><text x="95" y="38" text-anchor="middle" fill="#f8fafc" font-size="18" font-weight="800">Separate compute</text><text x="95" y="64" text-anchor="middle" fill="#94a3b8" font-size="14">elastic + cost controls</text></g>
+        <g transform="translate(330,210)"><rect width="190" height="92" rx="18" fill="#111827" stroke="#334155"/><text x="95" y="38" text-anchor="middle" fill="#f8fafc" font-size="18" font-weight="800">Branch data</text><text x="95" y="64" text-anchor="middle" fill="#94a3b8" font-size="14">safe agent sandboxes</text></g>
+        <g transform="translate(580,210)"><rect width="190" height="92" rx="18" fill="#111827" stroke="#334155"/><text x="95" y="38" text-anchor="middle" fill="#f8fafc" font-size="18" font-weight="800">Snapshot restore</text><text x="95" y="64" text-anchor="middle" fill="#94a3b8" font-size="14">fast rollback</text></g>
+        <g transform="translate(830,210)"><rect width="190" height="92" rx="18" fill="#111827" stroke="#334155"/><text x="95" y="38" text-anchor="middle" fill="#f8fafc" font-size="18" font-weight="800">Cross-cloud</text><text x="95" y="64" text-anchor="middle" fill="#94a3b8" font-size="14">resilience + continuity</text></g>
+      </svg>
+    </section>
+    <article class="section-card" id="bottom-line"><div class="section-kicker">Session Pack</div><h2>Bottom line</h2><p>The useful framing is: <strong>AI-generated applications will break yesterday’s database assumptions.</strong> If every agent/app spins up its own environment, mutates data, and scales unpredictably, the database cannot just be a storage engine. It needs to become a governed, elastic, recoverable operating layer for AI-era software.</p>
+<p>The sharpest line:</p>
+<blockquote>
+<p>The next generation of AI apps does not just need more databases. It needs safer databases.</p>
+</blockquote></article><article class="section-card" id="60-second-executive-summary"><div class="section-kicker">Session Pack</div><h2>60-second executive summary</h2><ul>
+<li>AI is making software creation explode, which means database environments multiply faster than humans can manage them manually.</li>
+<li>Traditional databases struggle with capacity limits, proprietary lock-in, operational overhead, and brittle ETL/CDC pipelines.</li>
+<li>Separating storage from compute gives teams elastic capacity, serverless execution, and better cost control.</li>
+<li>Branching and snapshot restore become crucial safety features when humans and AI agents can accidentally damage production data.</li>
+<li>Lake-based Postgres/data storage and cross-cloud resilience point toward a more open, fault-tolerant architecture for mission-critical AI applications.</li>
+</ul></article><article class="section-card" id="what-was-said-vs-what-it-means"><div class="section-kicker">Session Pack</div><h2>What was said vs what it means</h2><h3>What was said</h3>
+<ul>
+<li>AI-driven software creation is accelerating application development.</li>
+<li>Traditional databases are cumbersome to manage and often tied to proprietary software/clouds.</li>
+<li>Modern development creates isolated databases for every application/environment.</li>
+<li>Storage and compute should be separated so storage can scale independently from execution.</li>
+<li>Serverless functions reduce constant capacity management.</li>
+<li>Runaway model/app creation can create cost and governance problems.</li>
+<li>Branching creates safe environments for humans and agents.</li>
+<li>Snapshot restore enables fast rollback from mistakes.</li>
+<li>ETL and CDC pipelines are fragile when operational application schemas change upstream.</li>
+<li>Storing operational data on the lake can reduce CDC pressure and make analytics consumption easier.</li>
+<li>Cross-cloud deployment/failover can protect mission-critical operations from cloud outages.</li>
+</ul>
+<h3>What it means</h3>
+<ul>
+<li>The database is becoming part of the AI safety layer, not just the backend.</li>
+<li>Database architecture now has to manage agent mistakes, cost explosions, environment sprawl, and cloud failure.</li>
+<li>Developers need Git-like workflows for data: branch, test, isolate, restore.</li>
+<li>CAIOs should treat database platform choices as strategic AI infrastructure decisions, not plumbing.</li>
+<li>Databricks/lakehouse positioning becomes stronger when the conversation moves from data warehousing to operational resilience and AI app foundations.</li>
+</ul></article><article class="section-card" id="technical-ai-consultant-briefing"><div class="section-kicker">Session Pack</div><h2>Technical AI consultant briefing</h2><h3>Delivery implications</h3>
+<ul>
+<li>Build patterns for <strong>AI-safe data environments</strong>: dev/test/prod isolation, branch-based experimentation, and rollback paths.</li>
+<li>Treat agent access to databases as a governed capability: permissions, scoped environments, audit logs, evals, and kill switches.</li>
+<li>Design for cost containment from the start: autoscaling limits, budget alerts, resource ownership, idle-resource shutdown.</li>
+<li>Use lake-based storage patterns where CDC fragility or operational database load is a real client pain.</li>
+</ul>
+<h3>Architecture implications</h3>
+<ul>
+<li>Separation of storage and compute enables elastic scaling, but governance must follow the data across compute contexts.</li>
+<li>Serverless compute helps with bursty AI workloads, but needs guardrails against accidental infinite loops/runaway workloads.</li>
+<li>Branching/snapshot restore can become the safety net for both developer experimentation and agent execution.</li>
+<li>Cross-cloud replication and failover are only useful if recovery objectives, latency, data consistency, and operating procedures are explicit.</li>
+</ul>
+<h3>Reusable assets to build</h3>
+<ol>
+<li><strong>AI database readiness checklist</strong></li>
+</ol>
+<p>- storage/compute separation</p>
+<p>- branching/snapshot support</p>
+<p>- cost controls</p>
+<p>- agent permissions</p>
+<p>- audit logging</p>
+<p>- CDC/lake integration</p>
+<p>- cloud resilience</p>
+<ol>
+<li><strong>Agent-safe database reference architecture</strong></li>
+</ol>
+<p>- production DB locked down</p>
+<p>- branch/sandbox for agent execution</p>
+<p>- approval gate before merge/write-back</p>
+<p>- snapshot restore and audit trail</p>
+<ol>
+<li><strong>CDC pain diagnostic</strong></li>
+</ol>
+<p>- which operational tables feed analytics?</p>
+<p>- what breaks when schemas change?</p>
+<p>- what load does CDC add to production?</p>
+<p>- where could lake-native storage reduce friction?</p>
+<h3>Technical questions to debate</h3>
+<ul>
+<li>When should an AI agent be allowed to write to a production database at all?</li>
+<li>Is database branching enough, or do we need full policy-as-code around agent actions?</li>
+<li>What is the right consistency model for cross-cloud failover?</li>
+<li>Does lake-based operational data reduce complexity, or just move it somewhere else?</li>
+<li>Who owns rollback decisions when an AI-generated application corrupts state?</li>
+</ul></article><article class="section-card" id="sales-growth-talk-track"><div class="section-kicker">Session Pack</div><h2>Sales / growth talk track</h2><h3>Plain-English version</h3>
+<blockquote>
+<p>AI is making it easier to create apps, but that creates a new problem: every new app needs data, environments, controls, and rollback. The database layer has to become elastic, safer, and more resilient — otherwise AI app development turns into cost, risk, and operational mess.</p>
+</blockquote>
+<h3>Client trigger phrases</h3>
+<p>Listen for:</p>
+<ul>
+<li>“We have lots of AI prototypes but production is hard.”</li>
+<li>“Our developers keep spinning up new environments.”</li>
+<li>“CDC breaks whenever the application team changes something.”</li>
+<li>“We are worried about agents touching live systems.”</li>
+<li>“Cloud resilience is now a board-level concern.”</li>
+<li>“Our database costs are unpredictable.”</li>
+</ul>
+<h3>Best next questions</h3>
+<ul>
+<li>“Where do AI apps or agents need database access today, and how are you containing the risk?”</li>
+<li>“How quickly could you recover if an automated process deleted or corrupted production data?”</li>
+<li>“Which analytics pipelines are most brittle because they depend on operational database changes?”</li>
+<li>“If your main cloud region went down, what business process would fail first?”</li>
+</ul>
+<h3>Objections to expect</h3>
+<ul>
+<li>“We already have a database strategy.”</li>
+<li>“Cross-cloud sounds expensive.”</li>
+<li>“Serverless makes costs unpredictable.”</li>
+<li>“Our agents will not touch production.”</li>
+<li>“CDC is annoying, but it works well enough.”</li>
+</ul>
+<h3>Response</h3>
+<p>The point is not replacing everything tomorrow. The point is identifying which AI-era workloads are exposing old assumptions: static environments, manual capacity planning, brittle pipelines, and weak rollback.</p></article><article class="section-card" id="fsi-customer-angle"><div class="section-kicker">Session Pack</div><h2>FSI customer angle</h2><p>For banking, insurance, and wealth, this is a <strong>model risk + operational resilience</strong> story.</p>
+<p>Key angles:</p>
+<ul>
+<li>Agents touching databases introduce control, audit, and accountability questions.</li>
+<li>Snapshot restore and branching help reduce blast radius from automated mistakes.</li>
+<li>Cross-cloud resilience maps to operational continuity, outage planning, and regulatory scrutiny.</li>
+<li>Cost controls matter because AI workloads can scale unpredictably.</li>
+<li>Lake-based data can reduce pressure on critical operational systems, but governance and lineage must be strong.</li>
+</ul>
+<p>Customer-safe line:</p>
+<blockquote>
+<p>In financial services, the question is not “can the agent query the database?” It is “can we prove what it did, contain the blast radius, and recover fast if it is wrong?”</p>
+</blockquote></article><article class="section-card" id="retail-cpg-customer-angle"><div class="section-kicker">Session Pack</div><h2>Retail / CPG customer angle</h2><p>For retail and CPG, this is an <strong>AI shelf + product data + customer experience reliability</strong> story.</p>
+<p>Key angles:</p>
+<ul>
+<li>AI-generated apps will multiply around product content, recommendations, pricing, inventory, service, and supply chain.</li>
+<li>Poorly governed databases create inconsistent product truth across channels.</li>
+<li>Lake-based operational/product data can support analytics and AI without hammering production systems.</li>
+<li>Branching/safe sandboxes help teams test new customer experiences without damaging live product/catalogue data.</li>
+<li>Cross-cloud resilience matters when ecommerce, fulfilment, or customer service experiences are mission-critical.</li>
+</ul>
+<p>Customer-safe line:</p>
+<blockquote>
+<p>The AI shelf depends on trustworthy product data. If the database layer is brittle, the customer experience becomes brittle too.</p>
+</blockquote></article><article class="section-card" id="gavi-learning-brief"><div class="section-kicker">Session Pack</div><h2>Gavi learning brief</h2><h3>Beginner analogy</h3>
+<p>Traditional databases are like a single stockroom with one door. Everyone queues up, and if the shelves fill up or someone makes a mess, the whole shop suffers.</p>
+<p>The new model is more like a modern fulfilment network: storage can expand, workers can be added or removed on demand, test areas are separate from the live shop floor, and if someone breaks something, you can roll back to a clean snapshot.</p>
+<h3>Plain-English glossary</h3>
+<ul>
+<li><strong>Storage vs compute:</strong> storage is where data lives; compute is the processing power used to query/change it.</li>
+<li><strong>Serverless:</strong> you do not manage fixed servers all the time; compute scales up/down when needed.</li>
+<li><strong>Branching:</strong> a safe copy/path where developers or agents can test changes without damaging production.</li>
+<li><strong>Snapshot restore:</strong> rolling back to a previous known-good state.</li>
+<li><strong>ETL:</strong> moving and transforming data from one system into another.</li>
+<li><strong>CDC:</strong> change data capture; tracking changes in an operational database and sending them elsewhere.</li>
+<li><strong>Lake-based storage:</strong> storing data in an open data lake/lakehouse format rather than trapping it inside an operational database.</li>
+<li><strong>Cross-cloud failover:</strong> keeping operations running by switching across cloud providers/regions if one fails.</li>
+</ul>
+<h3>Socratic why-chain</h3>
+<ol>
+<li>Why does AI-generated software increase database pressure?</li>
+<li>Why does separating storage and compute help with unpredictable AI workloads?</li>
+<li>Why are agents riskier than normal users when they have database access?</li>
+<li>Why do CDC pipelines break when upstream application teams move fast?</li>
+<li>Why would cross-cloud resilience matter more for AI-native apps?</li>
+</ol></article><article class="section-card" id="devil-s-advocate"><div class="section-kicker">Session Pack</div><h2>Devil’s advocate</h2><ul>
+<li>“Infinite capacity” is dangerous language. Nothing is infinite; cost, governance, latency, and operational complexity still exist.</li>
+<li>Separating storage and compute solves some scaling problems but can introduce data consistency/performance trade-offs.</li>
+<li>Serverless can reduce ops burden but can also create surprise bills without hard cost controls.</li>
+<li>Branching and snapshot restore are not a substitute for good permissions. If the wrong thing can reach production, rollback is already plan B.</li>
+<li>Lake-based operational storage may reduce CDC pain, but clients will ask about latency, transactionality, tooling maturity, and migration risk.</li>
+<li>Cross-cloud sounds resilient, but many organisations underestimate the complexity of data consistency, networking, identity, security policies, and operational rehearsals.</li>
+</ul></article><article class="section-card" id="claims-to-verify-before-external-public-use"><div class="section-kicker">Session Pack</div><h2>Claims to verify before external/public use</h2><ul>
+<li>Any claim about “infinite” data capacity.</li>
+<li>Specific cost reduction claims from serverless/storage-compute separation.</li>
+<li>Any statistic about AI-generated app growth.</li>
+<li>Any horror story about agents deleting production databases, unless anonymised and clearly safe.</li>
+<li>Specific promises about cross-cloud failover speed or zero disruption.</li>
+<li>Any assertion that lake-based Postgres/data fully bypasses CDC in all contexts.</li>
+</ul></article><article class="section-card" id="linkedin-public-thought-leadership-angles"><div class="section-kicker">Session Pack</div><h2>LinkedIn / public thought-leadership angles</h2><h3>Hook options</h3>
+<ol>
+<li>AI agents make databases a safety problem, not just an architecture problem.</li>
+<li>The next database conversation will not be about where data lives. It will be about how safely AI can touch it.</li>
+<li>We are about to create more applications than humans can manually govern. The database layer has to grow up.</li>
+</ol>
+<h3>Draft post</h3>
+<p>AI is making it easier to create software.</p>
+<p>That sounds brilliant — until every new app, workflow, and agent wants its own data environment.</p>
+<p>Then the database conversation changes.</p>
+<p>It is no longer just:</p>
+<p>“Where do we store the data?”</p>
+<p>It becomes:</p>
+<ul>
+<li>how do we stop runaway cost?</li>
+<li>how do we give agents safe places to work?</li>
+<li>how do we roll back fast when something breaks?</li>
+<li>how do we avoid brittle CDC pipelines hammering production systems?</li>
+<li>how do we keep mission-critical operations running when a cloud has a bad day?</li>
+</ul>
+<p>The next generation of AI apps does not just need more databases.</p>
+<p>It needs safer databases.</p>
+<p>The thing I am watching: database branching, snapshot restore, lake-based operational data patterns, and cross-cloud resilience moving from “nice architecture features” to core AI operating model controls.</p>
+<p>That is where the CAIO conversation gets interesting.</p>
+<h3>Short X posts</h3>
+<ol>
+<li>AI agents turn database access into a governance problem. If an agent can mutate state, you need branching, rollback, audit, and hard permissions. Not vibes.</li>
+</ol>
+<ol>
+<li>“Serverless” is not a cost strategy. It is a scaling model. The cost strategy is ownership, limits, monitoring, and shutting down what nobody uses.</li>
+</ol>
+<ol>
+<li>The AI app explosion will punish brittle CDC pipelines. If analytics depends on fragile operational database changes, your AI roadmap inherits that fragility.</li>
+</ol>
+<h3>Community question</h3>
+<p>Where are you seeing the bigger blocker for AI apps: model capability, database architecture, or governance around who/what can touch production data?</p></article><article class="section-card" id="livestream-playback-segment"><div class="section-kicker">Session Pack</div><h2>Livestream / playback segment</h2><h3>Segment title</h3>
+<p><strong>The database layer AI agents will break first</strong></p>
+<h3>60-second opener</h3>
+<p>Here’s the thing I liked about this session: it was not another “AI will create more apps” story. That part is obvious now.</p>
+<p>The better question is: what happens when those apps and agents all need data, environments, permissions, rollback, and resilience?</p>
+<p>Because if an AI agent can create, change, or delete data, then your database is not just backend plumbing anymore. It becomes part of your AI safety and operating model.</p>
+<p>That is where branching, snapshot restore, separating storage from compute, lake-based data patterns, and cross-cloud resilience start to matter.</p>
+<p>Not as shiny architecture terms. As controls.</p>
+<h3>Clip-worthy line</h3>
+<blockquote>
+<p>If an AI agent can touch production data, your database strategy is now part of your AI governance strategy.</p>
+</blockquote></article><article class="section-card" id="follow-up-action-tracker"><div class="section-kicker">Session Pack</div><h2>Follow-up/action tracker</h2><ul>
+<li>Build an “AI-safe database architecture” diagram.</li>
+<li>Turn the database branching/snapshot point into a LinkedIn post.</li>
+<li>Create FSI talk track around model risk, auditability, and operational resilience.</li>
+<li>Create retail/CPG talk track around product data quality and AI shelf reliability.</li>
+<li>Verify public examples of agents/database incidents before using externally.</li>
+<li>If xAI/Grok is enabled, search for current market discussion on: <code>AI agents database branching snapshot restore serverless Postgres lakehouse</code>.</li>
+</ul></article>
+    <section class="footer">Created for Gavi · Session page lives at <code>sessions/database-evolution/index.html</code> · Source caveat: pasted outline only, transcript link incomplete.</section>
+  </main>
+</body>
+</html>
