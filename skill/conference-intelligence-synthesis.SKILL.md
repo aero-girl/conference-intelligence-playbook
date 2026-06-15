@@ -299,6 +299,45 @@ Convert conference material into:
 - board/executive briefing
 - podcast/talk/deck outline
 
+## YouTube Livestream Prep
+
+When Gavi says she is hosting a YouTube livestream/playback after the conference, turn the conference intelligence into a show pack, not a transcript recap.
+
+Produce:
+
+- **Show title options:** sharp, beginner-friendly, non-boring.
+- **Core thesis:** the opinionated thing Gavi believes after attending.
+- **3-act running order:** what happened → what it means → what customers should do.
+- **Opening monologue:** 60–90 seconds in Gavi’s voice.
+- **Segment cards:** 5–7 sections with hooks, examples, and transitions.
+- **FSI lens:** bank/insurance/wealth examples, risk, governance, regulation, model assurance, customer trust.
+- **Retail/CPG lens:** AI shelf, recommendation engines, product content, agents, supply chain, customer experience.
+- **Real-world examples:** only use sourced/public-safe examples or clearly label as hypothetical.
+- **Opinion spine:** what Gavi agrees with, disagrees with, thinks is overhyped, and thinks people are missing.
+- **Audience interaction:** polls, chat prompts, questions to ask viewers, “tell me if you’re seeing this too”.
+- **Clips bank:** 5 short punchy moments that can become LinkedIn/X clips afterwards.
+- **Customer CTA:** what FSI/retail leaders should do next week.
+
+Default structure:
+
+1. **Cold open:** “Here’s the thing nobody said plainly at the conference…”
+2. **The three signals:** the most important patterns across sessions.
+3. **What this means for customers:** split FSI and retail/CPG.
+4. **Where I disagree:** one provocative but defensible take.
+5. **Real examples:** public examples, not private conference gossip.
+6. **What to do now:** 3 practical actions.
+7. **Audience Q&A:** questions seeded from transcript themes.
+8. **Close:** memorable CAIO takeaway and follow-up CTA.
+
+Public safety rules for livestream:
+
+- Do not replay private/off-record material.
+- Do not show slide photos unless sharing is clearly permitted.
+- Use “speaker argued/claimed” for unverified claims.
+- Prefer public real-world examples over private anecdotes.
+- Keep client names out unless already public and safe.
+- Make Gavi’s opinion explicit: the audience is there for her judgement, not a neutral transcript readout.
+
 ## Image / Photo Handling
 
 When photos are uploaded:
