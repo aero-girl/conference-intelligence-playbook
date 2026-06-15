@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conference Intelligence Engine — Gavi Playbook</title>
+  <style>
+    :root{
+      --bg:#030712; --panel:#0f172a; --panel2:#111827; --ink:#f8fafc; --muted:#94a3b8;
+      --cyan:#22d3ee; --violet:#a78bfa; --amber:#f59e0b; --rose:#fb7185; --green:#34d399; --line:rgba(148,163,184,.24);
+    }
+    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top left,rgba(34,211,238,.16),transparent 32%),radial-gradient(circle at top right,rgba(167,139,250,.18),transparent 34%),var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+    a{color:var(--cyan)} .wrap{max-width:1180px;margin:0 auto;padding:28px 18px 72px}.hero{padding:48px 0 34px}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:rgba(15,23,42,.72);border-radius:999px;padding:7px 12px;color:var(--cyan);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.hero h1{font-size:clamp(38px,7vw,76px);line-height:.95;margin:22px 0 18px;letter-spacing:-.07em}.hero p{max-width:850px;color:#cbd5e1;font-size:clamp(18px,2.2vw,23px);margin:0}.grid{display:grid;gap:16px}.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.card{background:linear-gradient(180deg,rgba(15,23,42,.92),rgba(17,24,39,.82));border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 22px 60px rgba(0,0,0,.28)}.card h2,.card h3{margin:0 0 10px;letter-spacing:-.03em}.card h2{font-size:30px}.card h3{font-size:20px}.card p{color:#cbd5e1;margin:8px 0}.chip{display:inline-block;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:800;margin:0 6px 8px 0;border:1px solid var(--line);color:#e2e8f0;background:rgba(255,255,255,.04)}.cyan{color:var(--cyan)}.violet{color:var(--violet)}.amber{color:var(--amber)}.green{color:var(--green)}.rose{color:var(--rose)}.section{margin-top:26px}.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;align-items:stretch}.step{position:relative;min-height:156px}.num{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;font-weight:900;background:linear-gradient(135deg,var(--cyan),var(--violet));color:#020617;margin-bottom:12px}.arrow{display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:28px}.list{padding-left:20px;color:#cbd5e1}.list li{margin:7px 0}.callout{border-left:4px solid var(--cyan);padding:14px 16px;background:rgba(34,211,238,.08);border-radius:16px;color:#dbeafe}.danger{border-left-color:var(--rose);background:rgba(251,113,133,.08)}.ok{border-left-color:var(--green);background:rgba(52,211,153,.08)}.matrix{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}.small{font-size:14px;color:var(--muted)}.kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#020617;border:1px solid var(--line);border-radius:10px;padding:2px 7px;color:#e2e8f0}.footer{margin-top:36px;color:var(--muted);font-size:14px}.nav{position:sticky;top:0;z-index:5;backdrop-filter:blur(16px);background:rgba(3,7,18,.72);border-bottom:1px solid var(--line)}.nav-inner{max-width:1180px;margin:0 auto;display:flex;gap:8px;flex-wrap:wrap;padding:10px 18px}.nav a{text-decoration:none;color:#cbd5e1;border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:13px}.nav a:hover{color:white;border-color:var(--cyan)}
+    @media(max-width:900px){.cols-3,.cols-2,.flow,.matrix{grid-template-columns:1fr}.arrow{display:none}.hero{padding-top:28px}.card{padding:18px;border-radius:20px}}
+    @media print{.nav{display:none}body{background:white;color:#111}.card{box-shadow:none;break-inside:avoid}.hero p,.card p,.list,.small{color:#333}}
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="nav-inner">
+    <a href="#answer">Best setup</a><a href="#engine">Engine</a><a href="#outputs">Outputs</a><a href="#live">Live workflow</a><a href="#prompts">Prompts</a><a href="#rules">Rules</a>
+  </div></nav>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Conference Intelligence Engine · Gavi Playbook</div>
+      <h1>Don’t collect transcripts. Build a live advantage.</h1>
+      <p>Otter, notes and photos are only raw material. The win is turning every session into team intelligence, client insight, learning loops, follow-ups and public CAIO thought leadership.</p>
+    </section>
+
+    <section id="answer" class="grid cols-2 section">
+      <div class="card">
+        <h2>Is the skill enough?</h2>
+        <p><strong>No — not on its own.</strong> The skill is the operating brain, but the best setup needs four extra pieces:</p>
+        <ul class="list">
+          <li>a live capture routine so nothing rots in Otter,</li>
+          <li>a repeatable output stack for teams and public content,</li>
+          <li>a day-end synthesis rhythm,</li>
+          <li>and a public/private publishing lane.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>The principle</h2>
+        <div class="callout"><strong>Every talk should become at least one useful artefact:</strong> a team brief, a client angle, a learning card, a follow-up, a post, a demo idea, or a claim to verify.</div>
+        <p class="small">If a transcript produces only a summary, we left value on the floor.</p>
+      </div>
+    </section>
+
+    <section id="engine" class="section card">
+      <h2>The 5-part engine</h2>
+      <div class="flow">
+        <div class="card step"><div class="num">1</div><h3>Capture</h3><p>Otter transcript, notes, slide photos, speaker names, your voice-note reaction.</p></div>
+        <div class="arrow">→</div>
+        <div class="card step"><div class="num">2</div><h3>Interpret</h3><p>Separate what was said from what it means for CAIO, teams, clients and DAIS.</p></div>
+        <div class="arrow">→</div>
+        <div class="card step"><div class="num">3</div><h3>Convert</h3><p>Make team briefs, learning cards, follow-ups, LinkedIn/X posts and client angles.</p></div>
+      </div>
+      <div class="grid cols-2 section">
+        <div class="card"><div class="num">4</div><h3>Verify</h3><p>Check names, claims, stats, vendors and quotes before anything goes public.</p></div>
+        <div class="card"><div class="num">5</div><h3>Compound</h3><p>End each day with themes, contrarian takes, client questions and a content calendar.</p></div>
+      </div>
+    </section>
+
+    <section id="outputs" class="section">
+      <h2>What to produce</h2>
+      <div class="matrix">
+        <div class="card"><span class="chip cyan">For teams</span><h3>Conference team brief</h3><ul class="list"><li>What happened</li><li>Why it matters</li><li>What we should change</li><li>Client implications</li><li>Suggested actions</li></ul></div>
+        <div class="card"><span class="chip violet">For Gavi</span><h3>Learning card</h3><ul class="list"><li>Beginner explanation</li><li>Glossary</li><li>Analogy</li><li>Teach-back questions</li><li>What to read next</li></ul></div>
+        <div class="card"><span class="chip amber">For public surface</span><h3>Thought leadership</h3><ul class="list"><li>LinkedIn post</li><li>X thread / short takes</li><li>Contrarian view</li><li>Community question</li><li>Talk/deck ideas</li></ul></div>
+        <div class="card"><span class="chip green">For sales</span><h3>Client angle bank</h3><ul class="list"><li>Financial services relevance</li><li>Retail/CPG relevance</li><li>Databricks tie-in</li><li>Objections clients will raise</li><li>Useful examples</li></ul></div>
+        <div class="card"><span class="chip rose">For action</span><h3>Follow-up tracker</h3><ul class="list"><li>People to contact</li><li>Companies to research</li><li>Tools to test</li><li>Claims to verify</li><li>Demos to build</li></ul></div>
+        <div class="card"><span class="chip cyan">For memory</span><h3>End-of-day synthesis</h3><ul class="list"><li>5 themes</li><li>What’s new</li><li>What’s overhyped</li><li>What CAIOs should do next</li><li>Content calendar</li></ul></div>
+      </div>
+    </section>
+
+    <section id="live" class="section grid cols-2">
+      <div class="card">
+        <h2>Live session routine</h2>
+        <ol class="list">
+          <li>Start Otter and label the session.</li>
+          <li>Take photos of only the useful slides.</li>
+          <li>Write 3 messy notes: <span class="kbd">🔥</span>, <span class="kbd">client</span>, <span class="kbd">post</span>.</li>
+          <li>After the talk, record a 60-second reaction.</li>
+          <li>Upload transcript + notes + photos here.</li>
+          <li>I turn it into the output stack.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h2>60-second voice note script</h2>
+        <div class="callout ok">“The session was about ____. The useful bit was ____. I think this matters because ____. It connects to my work on ____. I disagree with ____. This could become a post about ____.”</div>
+        <p class="small">That personal reaction is the difference between bland transcript summary and real thought leadership.</p>
+      </div>
+    </section>
+
+    <section id="prompts" class="section card">
+      <h2>Copy-paste prompt when uploading</h2>
+      <p>Use this with each Otter transcript:</p>
+      <div class="callout"><strong>“Use the conference intelligence skill. Turn this transcript, my notes and photos into: 1) 60-second summary, 2) team brief, 3) what this means for clients, 4) what I need to learn, 5) LinkedIn/X posts in my voice, 6) follow-ups/actions, 7) claims to verify before posting.”</strong></div>
+    </section>
+
+    <section id="rules" class="section grid cols-2">
+      <div class="card">
+        <h2>Posting rules</h2>
+        <ul class="list">
+          <li>Don’t publish private / Chatham House content.</li>
+          <li>Don’t quote speakers unless clearly allowed.</li>
+          <li>Mark vendor stats as claims until verified.</li>
+          <li>Keep photos internal unless sharing is permitted.</li>
+          <li>Use Gavi’s voice: sharp, warm, concrete, not corporate soup.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>What I’ll watch for</h2>
+        <ul class="list">
+          <li>themes that support CAIO positioning</li>
+          <li>Databricks / AI strategy hooks</li>
+          <li>financial services, retail and CPG implications</li>
+          <li>red-teaming, governance and model-risk signals</li>
+          <li>ideas that can become demos, decks, posts or client conversations</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer">
+      Created for Gavi · Conference Intelligence Engine · Public-safe operating playbook · No client/private transcript content included.
+    </section>
+  </main>
+</body>
+</html>
