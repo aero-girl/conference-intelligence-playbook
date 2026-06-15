@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [conference, otter, transcripts, thought-leadership, linkedin, x, learning, team-briefs, social-listening, excalidraw]
-    related_skills: [last30days-research, dais-ai-strategy-translator, humanizer, ocr-and-documents, xurl, excalidraw]
+    related_skills: [last30days-research, dais-ai-strategy-translator, humanizer, ocr-and-documents, xai-grok-search, xurl, excalidraw]
 ---
 
 # Conference Intelligence Synthesis
