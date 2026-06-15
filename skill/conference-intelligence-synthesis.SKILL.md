@@ -6,8 +6,8 @@ author: Hermes Agent
 license: MIT
 metadata:
   hermes:
-    tags: [conference, otter, transcripts, thought-leadership, linkedin, x, learning, team-briefs]
-    related_skills: [last30days-research, dais-ai-strategy-translator, humanizer, ocr-and-documents]
+    tags: [conference, otter, transcripts, thought-leadership, linkedin, x, learning, team-briefs, social-listening, excalidraw]
+    related_skills: [last30days-research, dais-ai-strategy-translator, humanizer, ocr-and-documents, xurl, excalidraw]
 ---
 
 # Conference Intelligence Synthesis
@@ -31,6 +31,11 @@ Use when the user provides or mentions:
 - “turn this into LinkedIn/X posts”
 - “help me learn this topic”
 - “what should I tell Advancing Analytics / DAIS / client teams?”
+- “what are people saying online about this?”
+- “pull top posts / comments / opinions”
+- “use X / xAI / Grok signal”
+- “play devil’s advocate”
+- “map this visually”
 - “what did the conference really say?”
 
 Do **not** use for private/client-confidential sessions where recording/sharing is not permitted. If content includes private client, employee, or commercially sensitive data, keep outputs internal and flag privacy risk.
@@ -89,7 +94,31 @@ Classify insights into:
 - talent / ways of working
 - vendor landscape and procurement risk
 
-### 4. Produce layered outputs
+### 4. Pull the online conversation
+
+When Gavi asks for external signal, use the `xurl` / X workflow where configured, plus web/news/blog search where useful. The goal is not vanity social listening. The goal is to understand what smart people, sceptics, practitioners, vendors, and customers are saying around the conference themes.
+
+For each conference theme, collect:
+
+- **Top posts:** high-engagement X/LinkedIn/public posts where accessible.
+- **Top opinions:** recurring claims, disagreements, excitement, scepticism, and hot takes.
+- **Top comments/replies:** what people push back on, ask for, or misunderstand.
+- **Source links:** preserve URLs, handles/names where public, dates, and visible engagement metrics.
+- **Signal quality:** mark whether the source is practitioner, vendor, analyst, customer, journalist, academic, or hype account.
+- **Devil’s advocate:** what a sceptical CAIO, CISO, procurement lead, or model-risk owner would challenge.
+
+X-specific workflow:
+
+- First verify access with `xurl auth status` and a cheap read/search. Never read or expose `~/.xurl` or tokens.
+- Use `xurl search "<conference/theme query>" -n <N>` for public posts.
+- For a specific post, use its URL/ID with `xurl read <post>` where possible.
+- To inspect replies/comments around a post, search by conversation/thread where API access permits; rank replies by visible engagement and usefulness, not just likes.
+- Do not post, like, reply, repost, follow, or DM unless Gavi explicitly asks and approves the exact action.
+- If X API access is missing, say so plainly and fall back to public web search rather than pretending.
+
+If xAI/Grok access is configured for the Hermes environment, use it as an additional synthesis lens for clustering public posts/opinions, but still preserve source links and do not treat model synthesis as evidence.
+
+### 5. Produce layered outputs
 
 Do not dump one giant summary. Produce a stack of artefacts for different audiences.
 
@@ -107,14 +136,27 @@ When Gavi uploads one session, produce:
 
 ### B. Team briefing
 
-Make it useful for her teams:
+Make it useful for two internal audiences, not one blob:
+
+#### Technical AI consultants
 
 - **What happened:** concise factual summary
-- **Why it matters:** commercial / technical / strategic relevance
-- **What we should change:** behaviours, experiments, sales messaging, delivery approach
+- **Why it matters technically:** architecture, data, governance, evaluation, integration, deployment, risk
+- **What we should change:** delivery patterns, reusable assets, accelerators, experiments, demos, reference architectures
 - **Client relevance:** how this shows up in financial services, retail, CPG, or Databricks conversations
-- **Questions for the team:** discussion prompts
+- **Questions for the team:** sharp discussion prompts
 - **Suggested owner / next action:** if obvious
+
+#### Sales / growth team
+
+- **Plain-English version:** no unnecessary technical detail
+- **Client trigger:** what problem this helps them spot in a meeting
+- **Talk track:** 3–5 lines they can say confidently
+- **Objections to expect:** budget, risk, procurement, security, unclear ROI
+- **Proof/examples:** public examples or anonymised patterns only
+- **Next-best question:** what to ask the client next
+
+Always separate these audiences. Highly skilled consultants need depth; sales need usable signal without drowning in implementation detail.
 
 ### C. Gavi learning brief
 
@@ -153,15 +195,53 @@ Extract:
 - client opportunities
 - possible content pieces
 
-### F. Source and evidence notes
+### G. Social signal digest
 
-Flag:
+When online signal is requested, add a digest that lets Gavi understand the market quickly:
 
-- claims directly supported by transcript/photos
-- claims that need web verification
-- claims that are opinion/speculation
-- usable quotes
-- unsafe/private material not for posting
+```markdown
+## Online signal digest: <theme/conference>
+
+### Top posts worth reading
+1. <source/link/date/engagement if visible> — <why it matters>
+2. ...
+
+### What people seem to believe
+- ...
+
+### What people are arguing about
+- ...
+
+### Best comments / replies
+- <source/link> — <useful objection, question, or nuance>
+
+### Devil’s advocate
+- strongest sceptical challenge
+- procurement/security/model-risk objection
+- what would make this claim weak
+
+### What Gavi can say
+- internal technical team: ...
+- sales team: ...
+- FSI customer: ...
+- retail/CPG customer: ...
+
+### Source reliability
+- strong sources: ...
+- hype/noise: ...
+- needs verification: ...
+```
+
+### H. Visual map
+
+When the material is complex, produce or offer an Excalidraw map that shows:
+
+- inputs: transcripts, notes, photos, online posts/comments
+- processing: clean, interpret, verify, devil’s advocate, sector translation
+- outputs: consultant brief, sales talk track, customer angles, livestream, posts
+- feedback loop: what gets verified, learned, reused, or discarded
+
+Save diagrams as `.excalidraw` files and link or attach them when useful.
 
 ## Multi-Session / End-of-Day Synthesis
 
@@ -227,6 +307,18 @@ Confidence: High / Medium / Low
 
 ### Why we should care
 - ...
+
+### For technical AI consultants
+- Delivery implication: ...
+- Architecture / data / governance implication: ...
+- Reusable asset or demo idea: ...
+- Technical questions to debate: ...
+
+### For sales / growth
+- Plain-English talk track: ...
+- Client trigger to listen for: ...
+- Best next question to ask: ...
+- Objections likely to come up: ...
 
 ### What this means for our work
 - Delivery: ...

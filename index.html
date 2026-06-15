@@ -17,7 +17,7 @@
 </head>
 <body>
   <nav class="nav"><div class="nav-inner">
-    <a href="#answer">Best setup</a><a href="#engine">Engine</a><a href="#outputs">Outputs</a><a href="#live">Live workflow</a><a href="#youtube">YouTube playback</a><a href="#prompts">Prompts</a><a href="#rules">Rules</a>
+    <a href="#answer">Best setup</a><a href="#engine">Engine</a><a href="#outputs">Outputs</a><a href="#live">Live workflow</a><a href="#social">X/social signal</a><a href="#youtube">YouTube playback</a><a href="#prompts">Prompts</a><a href="#rules">Rules</a>
   </div></nav>
   <main class="wrap">
     <section class="hero">
@@ -90,6 +90,21 @@
       </div>
     </section>
 
+    <section id="social" class="section card">
+      <h2>X / social signal layer</h2>
+      <p><strong>Conference transcripts tell us what was said in the room. Social signal tells us what the market is arguing about outside it.</strong> Use X posts, comments, public LinkedIn/news/blogs and xAI/Grok-assisted synthesis where configured to find the strongest opinions, objections and customer-ready angles.</p>
+      <div class="grid cols-3 section">
+        <div class="card"><span class="chip cyan">Collect</span><h3>Top posts and sources</h3><ul class="list"><li>conference hashtags and speakers</li><li>vendor/customer/practitioner posts</li><li>public engagement metrics</li><li>source links preserved</li><li>comments/replies where API access allows</li></ul></div>
+        <div class="card"><span class="chip violet">Challenge</span><h3>Devil’s advocate</h3><ul class="list"><li>what’s overclaimed</li><li>security/procurement objections</li><li>model-risk concerns</li><li>weak evidence</li><li>where Gavi should disagree</li></ul></div>
+        <div class="card"><span class="chip green">Translate</span><h3>Two internal versions</h3><ul class="list"><li>technical consultant brief</li><li>sales talk track</li><li>FSI customer angles</li><li>retail/CPG customer angles</li><li>things to say this week</li></ul></div>
+      </div>
+      <div class="grid cols-2 section">
+        <div class="card"><h3>For technical AI consultants</h3><p>Give the depth: architecture implications, evaluation, data quality, model risk, governance, implementation traps, reusable demos and delivery patterns.</p></div>
+        <div class="card"><h3>For sales / growth</h3><p>Strip it back: client trigger, plain-English talk track, objections to expect, proof points, and the next best question to ask.</p></div>
+      </div>
+      <div class="callout section"><strong>Output:</strong> a sourced digest with top posts, best comments, recurring opinions, devil’s-advocate challenge, and what Gavi can say internally and to customers quickly. Visual version: <a href="conference-intelligence-engine.excalidraw">download the Excalidraw map</a>.</div>
+    </section>
+
     <section id="youtube" class="section card">
       <h2>YouTube livestream playback pack</h2>
       <p><strong>The livestream should not be “here are my notes”.</strong> It should be Gavi’s opinionated field report: what mattered, what was hype, and what FSI/retail leaders should do next.</p>
@@ -108,7 +123,7 @@
     <section id="prompts" class="section card">
       <h2>Copy-paste prompt when uploading</h2>
       <p>Use this with each Otter transcript:</p>
-      <div class="callout"><strong>“Use the conference intelligence skill. Turn this transcript, my notes and photos into: 1) 60-second summary, 2) team brief, 3) what this means for clients, 4) what I need to learn, 5) LinkedIn/X posts in my voice, 6) YouTube livestream playback pack, 7) follow-ups/actions, 8) claims to verify before posting.”</strong></div>
+      <div class="callout"><strong>“Use the conference intelligence skill. Turn this transcript, my notes and photos into: 1) 60-second summary, 2) team brief split for technical AI consultants and sales/growth, 3) what this means for clients, 4) what I need to learn, 5) sourced X/social signal digest with top posts, opinions and comments, 6) devil’s-advocate challenge, 7) LinkedIn/X posts in my voice, 8) YouTube livestream playback pack, 9) follow-ups/actions, 10) claims to verify before posting.”</strong></div>
     </section>
 
     <section id="rules" class="section grid cols-2">
